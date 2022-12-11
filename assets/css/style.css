@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --pink: #ffa0a3;
+    --gray: #7f8fa3;
+    --turquoise: #77ddf9;
+    --font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+body {
+    background-color: #eafbff;
+}
+
+.header {
+    padding: 10px;
+    font-family: var(--font-family);
+    background-color: #7f8fa3;
+    color: var(--pink);
+}
+
+.header h1 {
+    /* Set navigation to be in line */
+    display: inline-block;
+    font-size: 38px;
+}
+
+.header section {
+    padding-top: 10px;
+    margin-right: 20px;
+    float: right;
+    font-family: var(--font-family);
+    font-size: 20px;
+}
+
+.header section ul {
+    /* Set the list style so no numbers or points show */
+    list-style-type: none;
+}
+
+.header section ul li {
+    /* Set the display of the link in the margin */
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: var(--pink);
+    text-decoration: none;
+}
+
+.welcome-image {
+    /* Sets location, size and link to main image */
+    height: 550px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/subtitle-image.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.welcome-image h2 {
+    position: absolute;
+    bottom: 25px;
+    left: 10px;
+    font-family: var(--font-family);
+    font-size: 25px;
+    color: var(--pink);
+}
+
+p {
+    font-size: 16px;
+    color: var(--gray);
+}
+
+.content h3 {
+    font-size: 20px;
+    color: var(--turquoise)
+}
+
+.contact-me {
+    padding: 10px;
+    font-family: var(--font-family);
+    color: var(--gray);
+}
+
+.contact-me h3 {
+    display: inline-block;
+}
+
+.contact-me section ul {
+    /* Set the list style so no numbers or points show */
+    list-style-type: none;
+}
+
+.contact-me section ul li {
+    /* Set the display of the link in the margin */
+    display: inline-block;
+    margin-right: 25px;
+}
+
