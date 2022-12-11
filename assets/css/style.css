@@ -79,13 +79,17 @@ p {
 
 .content h3 {
     font-size: 20px;
-    color: var(--turquoise)
+    color: var(--turquoise);
+    margin-bottom: 10px;
 }
 
-.contact-me {
-    padding: 10px;
-    font-family: var(--font-family);
+.contact-me section {
     color: var(--gray);
+    padding-top: 10px;
+    margin-right: 20px;
+    float: right;
+    font-family: var(--font-family);
+    font-size: 16px;
 }
 
 .contact-me h3 {
@@ -100,6 +104,19 @@ p {
 .contact-me section ul li {
     /* Set the display of the link in the margin */
     display: inline-block;
-    margin-right: 25px;
+    padding-right: 25px;
 }
 
+.footer {
+    /* Set the location of footer text */
+    padding: 10px;
+    font-family: var(--font-family);
+    background-color: #7f8fa3;
+}
+
+.footer h4 {
+    /* Set size of font */
+    font-size: 16px;
+    color: var(--pink);
+    text-align: center;
+}
