@@ -1,7 +1,5 @@
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 }
 
 :root {
@@ -13,11 +11,12 @@
 
 body {
     background-color: #eafbff;
+    font-family: var(--font-family);
+    margin: 0;
 }
 
 .header {
-    padding: 10px;
-    font-family: var(--font-family);
+    padding: 20px;   
     background-color: #7f8fa3;
     color: var(--pink);
 }
@@ -26,13 +25,17 @@ body {
     /* Set navigation to be in line */
     display: inline-block;
     font-size: 38px;
+    margin-left: 5px;
+}
+
+.header img {
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .header section {
-    padding-top: 10px;
     margin-right: 20px;
     float: right;
-    font-family: var(--font-family);
     font-size: 20px;
 }
 
@@ -72,19 +75,40 @@ a {
     color: var(--pink);
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
 p {
     font-size: 16px;
     color: var(--gray);
 }
 
 .content h3 {
+    display: flex;
+    /* Defines how to distribute the empty space between child elements */
+    justify-content: space-between;
     font-size: 20px;
     color: var(--turquoise);
     margin-bottom: 10px;
 }
+ 
+.about-me,
+.work {
+    height: 400px;
+    width: 100%;
+    margin: 5px auto;
+}
+
+.contact-me {
+    height: 50px;
+    width: 100%;
+    margin: 5px auto;
+}
 
 .contact-me section {
-    color: var(--gray);
+  color: var(--gray);  
     padding-top: 10px;
     margin-right: 20px;
     float: right;
@@ -105,18 +129,13 @@ p {
     /* Set the display of the link in the margin */
     display: inline-block;
     padding-right: 25px;
+    position: relative;
 }
 
-.footer {
-    /* Set the location of footer text */
+footer {
+    display: flex;
+    justify-content: center;
     padding: 10px;
-    font-family: var(--font-family);
-    background-color: #7f8fa3;
-}
-
-.footer h4 {
-    /* Set size of font */
-    font-size: 16px;
+    background-color: var(--gray);
     color: var(--pink);
-    text-align: center;
-}
+  }
