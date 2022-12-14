@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-    padding: 20px;   
+    padding: 15px;   
     background-color: #7f8fa3;
     color: var(--pink);
 }
@@ -35,6 +35,7 @@ body {
 
 .header section {
     margin-right: 20px;
+    margin-top: 40px;
     float: right;
     font-size: 20px;
 }
@@ -69,7 +70,7 @@ a {
 .welcome-image h2 {
     position: absolute;
     bottom: 25px;
-    left: 10px;
+    right: 20px;
     font-family: var(--font-family);
     font-size: 25px;
     color: var(--pink);
@@ -83,21 +84,20 @@ main {
 p {
     font-size: 16px;
     color: var(--gray);
+    margin: 5px;
 }
 
 .content h3 {
     display: flex;
     /* Defines how to distribute the empty space between child elements */
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 30px;
     color: var(--turquoise);
     margin-bottom: 10px;
-    /*check this section of code again.*/
-    text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 0 #000000;
 }
  
 .about-me {
-    height: 400px;
+    height: 150px;
     width: 100%;
     margin: 5px auto;
     flex-wrap: wrap;
@@ -138,6 +138,7 @@ p {
     float: left;
     width: 33.33%;
     padding: 5px;
+    color: #7f8fa3;
 }
 
 .projects header {
